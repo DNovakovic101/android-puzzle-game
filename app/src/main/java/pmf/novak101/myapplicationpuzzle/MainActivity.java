@@ -21,7 +21,6 @@ public class MainActivity<GridLayot> extends AppCompatActivity {
         public boolean onTouch(View view, MotionEvent motionEvent) {
             if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                 dragged = (ImageView) view;
-                Log.i("DRAGGED INFO IN onTouch ", dragged.getTag().toString());
                 ClipData data = ClipData.newPlainText("", "");
                 View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(
                         view);
